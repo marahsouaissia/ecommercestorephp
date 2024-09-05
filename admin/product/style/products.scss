@@ -1,0 +1,121 @@
+/* products.scss */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.categories-button {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background-color: #fd0001;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.order-button {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background-color: #efa8a3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.users-button {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background-color: #3f00fd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.edit-button, .delete-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #007bb5;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #e60000;
+}

@@ -1,0 +1,60 @@
+
+.principal_menu {
+        margin: 0 auto; /* Ajoute des marges automatiques sur les côtés gauche et droit */
+        max-width: 1000px; /* Facultatif : limite la largeur de la div pour un meilleur contrôle */
+        margin-top:50px ;
+    }
+
+
+
+.product-list {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-list li {
+    display: inline-block; /* Affiche les éléments de la liste en ligne */
+    margin: 20px; /* Marge entre les éléments de la liste */
+    vertical-align: top; /* Alignement vertical en haut */
+    text-align: center; /* Alignement du texte au centre */
+    justify-content: center;
+}
+
+.product-list li img {
+    max-width: 150px; /* Largeur maximale de l'image */
+    height: 150px; /* Hauteur automatique pour conserver les proportions */
+    border-radius: 50%;
+}
+
+.product-list li h2 {
+
+    margin: 20px;
+}
+.title{
+    text-align: center;
+    margin-top: 30px;
+    font-family:  "cursive";
+}
+.h{
+    font-family:  Georgia, serif;
+    font-size: 23px ;
+
+    font-weight: bold;
+}
+.sider_bar {
+    margin: 0 auto; /* Ajoute des marges automatiques sur les côtés gauche et droit */
+
+}
+
+.sider_bar_menu ul {
+    padding: 0; /* Supprime les marges intérieures de la liste */
+}
+
+.sider_bar_menu ul li {
+    margin-bottom: 10px; /* Ajoute un espacement entre chaque élément de la liste */
+}
+.sider_bar_menu ul li.current a {
+    text-decoration: underline; /* Souligner le lien de la page actuelle */
+}

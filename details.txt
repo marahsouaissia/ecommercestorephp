@@ -1,0 +1,85 @@
+couleur rose : #FFC0CB
+beige claire : #E1B6A4
+
+<div class="rubriques">
+           <div class="row">
+               <ul>
+                   <li>
+                        <div class="col-10">
+                            <div class="col-md-2">
+                                <img src="assets/imgs/product/im_bague.jpg" alt="Bague 1">
+                                <div class="rubrique_title" >
+                                    <a class="T" href="product.html">Bagues</a>
+                                </div>
+
+                            </div>
+
+                         </div>
+                   </li>
+                   <li>
+                       <div class="col-10">
+                           <div class="col-md-2">
+                               <img src="assets/imgs/product/im_collier.jpeg" alt="colliers">
+                               <div class="rubrique_title" >
+                                   <a class="T" href="product.html">Colliers</a>
+                               </div>
+
+                           </div>
+
+                       </div>
+                   </li>
+                   <li>
+                       <div class="col-10">
+                           <div class="col-md-2">
+                               <img src="assets/imgs/product/im_boucles.jpg" alt="boucles">
+                               <div class="rubrique_title" >
+                                   <a class="T" href="product.html">Boucles</a>
+                               </div>
+
+                           </div>
+
+                       </div>
+                   </li>
+                   <li>
+                       <div class="col-10">
+                           <div class="col-md-2">
+                               <img src="assets/imgs/product/im_bracelet.jpg" alt="Bracelet">
+                               <div class="rubrique_title" >
+                                   <a class="T" href="product.html">Bracelets</a>
+                               </div>
+
+                           </div>
+
+                       </div>
+                   </li>
+                   <li>
+                       <div class="col-10">
+                           <div class="col-md-2">
+                               <img src="assets/imgs/product/im_pack.jpg" alt="pack">
+                               <div class="rubrique_title" >
+                                   <a class="T" href="product.html">Pack</a>
+                               </div>
+
+                           </div>
+
+                       </div>
+                   </li>
+               </ul>
+
+           </div>
+
+       </div>
+
+       <!--       Categories area start -->
+
+SELECT p.* 
+FROM product p
+JOIN product_categorie pc ON p.id = pc.product_id
+WHERE pc.categorie_id = 46;
+
+
+
+
+
+
+

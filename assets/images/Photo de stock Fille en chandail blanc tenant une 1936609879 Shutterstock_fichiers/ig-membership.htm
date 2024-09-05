@@ -1,0 +1,37 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body>
+<script>
+    if (navigator.joinAdInterestGroup) {
+        const addIgScript = document.createElement('script');
+        let src = null;
+        if (navigator.runAdAuction) {
+            if (window.FencedFrameConfig || 'src' in document.createElement('fencedframe')) {
+                src = 'https://us.creativecdn.com/ig-membership?ntk=KKujwbKhhvvakV7SwUAK8_uH_Xqj4eHadlXN5YixthNjItbeh88s0HW_L2PEA_Z4DrWchzbD1bpkpXH2_029kQ9bay2vK-BeoJaoWt309yg';
+            } else {
+                src = 'https://us.creativecdn.com/ig-membership?ntk=KKujwbKhhvvakV7SwUAK8_uH_Xqj4eHadlXN5YixthNjItbeh88s0HW_L2PEA_Z4DrWchzbD1bpkpXH2_029kZXqFpY6JKvNiDwc2zIH5Q8';
+            }
+        } else {
+            if (window.FencedFrameConfig || 'src' in document.createElement('fencedframe')) {
+                src = 'https://us.creativecdn.com/ig-membership?ntk=KKujwbKhhvvakV7SwUAK8_uH_Xqj4eHadlXN5YixthNjItbeh88s0HW_L2PEA_Z4DrWchzbD1bpkpXH2_029kTaAZogFDwUDDnJnPlkbj-0';
+            } else {
+                src = 'https://us.creativecdn.com/ig-membership?ntk=KKujwbKhhvvakV7SwUAK8_uH_Xqj4eHadlXN5YixthNjItbeh88s0HW_L2PEA_Z4DrWchzbD1bpkpXH2_029kbTsMyDrFStN3rk5KZMSzfs';
+            }
+        }
+
+        if ('cookieDeprecationLabel' in navigator) {
+            navigator.cookieDeprecationLabel.getValue().then((label) => {
+                if (label) {
+                    src += "&lbl=" + label;
+                }
+
+                addIgScript.setAttribute('src', src);
+                document.body.appendChild(addIgScript);
+            });
+        } else {
+            addIgScript.setAttribute('src', src);
+            document.body.appendChild(addIgScript);
+        }
+    }
+</script>
+
+</body></html>
